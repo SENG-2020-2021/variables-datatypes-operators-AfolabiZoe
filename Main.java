@@ -16,6 +16,6 @@ class Main {
    // calculate and print days the debtor has not payed for
 
    //kindly remove the statement below when you are done with the assignment
-    System.out.println("Hello world!");
+    System.out.println("Hello Nigeria!");
   }
 }
