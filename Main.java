@@ -1,21 +1,20 @@
 class Main {
   public static void main(String[] args) {
-   // kindly use appropriate data types for your declaration
-   // declare variables days the debtor defaulted, amount the debtor is to pay per day, amount the debtor is to pay and assign values to them
-   
-   //Declare the variable of the total amount the debtor is to pay, the days the debtor paid for, amount the debtor is left to pay, days the debtor has not payed for
+    long daysTheDebtor = 60;
+    long amountPayPerDay = 100;
+    long amountPaid =2700;
 
-   // calculate and print total amount the debtor is to pay
+    long dayPaid = amountPaid/amountPayPerDay;
+    long totalAmount = amountPayPerDay * daysTheDebtor;
+    long amountLeft = totalAmount - amountPaid;
+    long daysLeft = daysTheDebtor - dayPaid;
+    long incompleteAmount = amountPaid % amountPayPerDay;
 
-   // calculate and print the days the debtor paid for
-  
-  // calculate and print the amount whose day was not captured because the amount was incomplete
-
-   // calculate and print amount the debtor is left to pay
-
-   // calculate and print days the debtor has not payed for
-
-   //kindly remove the statement below when you are done with the assignment
-    System.out.println("Hello Nigeria!");
+    System.out.println("The total debit is # "+ totalAmount);
+    System.out.println("He has paid #" + amountPaid);
+    System.out.println("Amount the client is left to pay is # " + amountLeft);
+    System.out.println(" the amount whose day was not captured because the amount was incomplete " + incompleteAmount);
+    System.out.println("He has paid for  " + dayPaid +  "days");
+    System.out.println("Days incomplete due to insufficient funds are  " + daysLeft + "days");
   }
 }
